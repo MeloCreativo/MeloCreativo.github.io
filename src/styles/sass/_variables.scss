@@ -1,0 +1,27 @@
+@import './layout';
+
+// Colors //
+$success-green: #4dda4d;
+$progress-green: #0bdf24;
+$error-red: #ff3f2a; 
+$main-blue: #4f36e8;
+$light-blue: #2DC7FF;
+$main-yellow: #ffc925;
+$white: #fff;
+$light-gray: #aaa;
+$black: #000;
+
+
+// Fonts //
+$primary-font: "Kanit", Helvetica, Arial, sans-serif;
+$secondary-font: "Roboto", Helvetica, Arial, sans-serif;
+
+// Spacings //
+$spacing--xs: 8px;
+$spacing--s: 16px;
+$spacing--md: 32px;
+$spacing--lg: 64px;
+$spacing--xl: 96px;
+
+// Transitions //
+$all: all 0.3s ease-in-out;

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/styles/css/normalize.css">
+    <link rel="stylesheet" href="../src/styles/css/styles.css">
+    <script src="https://kit.fontawesome.com/43aad429ed.js" crossorigin="anonymous"></script>
+    <title>QuizScript - Start Game</title>
+</head>
+<body>
+    <div class="container">
+        <div id="main-quiz">
+            <div id="hud">
+                <div class="hud-item">
+                    <p id="progressText" class="hud-prefix">
+                        Quiz Nº
+                    </p>
+                    <div id="progress-bar">
+                        <div id="progressBarFull">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="hud-item">
+                    <p class="hud-prefix">
+                        Puntaje
+                    </p>
+                    <p class="hud-main-text" id="score">
+                        0
+                    </p>
+                </div>
+            </div>
+
+            <h1 id="question">Cuál es la respuesta?</h1>
+            <div class="choice-container">
+                <p class="choice-prefix">A</p>
+                <p class="choice-text" data-number="1">Choice 1</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">B</p>
+                <p class="choice-text" data-number="2">Choice 2</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">C</p>
+                <p class="choice-text" data-number="3">Choice 3</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">D</p>
+                <p class="choice-text" data-number="4">Choice 4</p>
+            </div>
+        </div>
+        <footer>
+            <p>Codeado con mucha paciencia por Francisco Melo</p>
+            <a href="https://www.github.com/MeloCreativo" target="_blank" rel="noopener">
+                <i class="fa fa-github"></i>
+            </a>
+        </footer>
+    </div>
+    <script src="../public/scripts/quiz.js"></script>
+</body>
+</html>

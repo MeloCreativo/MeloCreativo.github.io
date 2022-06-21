@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/styles/css/styles.css">
+    <script src="https://kit.fontawesome.com/43aad429ed.js" crossorigin="anonymous"></script>
+    <title>QuizScript - ¡Haz finalizado la partida!</title>
+</head>
+<body>
+    <div class="container end-quiz">
+        <div id="end">
+            <img src="../src/assets/logo-quizscript.svg" alt="¡Gracias por jugar con QuizScript!">
+            <h1 id="finalScore">0</h1>
+            <form class="end-quiz-form">
+                <h2 id="quiz-form-heading">
+                    ¡Ingresa tu nombre para guardar tu puntaje!
+                </h2>
+                <div class="quiz-form-content">
+                    <input type="text" name="name" id="username" placeholder="Ingresa tu nombre">
+                    <button class="btn" id="saveScoreButton" type="submit" onclick="saveHighScore(event)" disabled>
+                        Guardar puntaje
+                    </button>
+                </div>
+            </form>
+            <div class="quiz-form-actions">
+                <a href="../quiz.html" class="btn light-blue__outlined">
+                    Jugar de nuevo
+                </a>
+                <a href="../index.html" class="btn yellow__filled">
+                    Inicio
+                </a>
+            </div>
+        </div>
+        <footer>
+            <p>Codeado con mucha paciencia por Francisco Melo</p>
+            <a href="https://www.github.com/MeloCreativo" target="_blank" rel="noopener">
+                <i class="fa fa-github"></i>
+            </a>
+        </footer>
+    </div>
+    <script src="../public/scripts/end-quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+@import "./variables";
+@import "./layout";
+
+#end {
+    width: 100%;
+    @include d-flex(column, wrap, center, center);
+
+    img {
+        width: clamp(6rem, 20vw, 25vw);
+        margin-bottom: $spacing--md;
+    }
+
+    .end-quiz-form {
+        .quiz-form-heading {
+            font-size: 2.4rem;
+            color: $white;
+            text-align: center;
+        }
+
+        #quiz-form-heading {
+            width: 100%;
+            text-align: center;
+            margin-bottom: $spacing--md;
+            font-size: clamp(3rem, 8vw, 4rem)
+        }
+
+        .quiz-form-content {
+            @include d-flex(row, nowrap, flex-start, center);
+            gap: $spacing--s;
+            margin-bottom: $spacing--md;
+
+            input {
+                box-sizing: content-box;
+                margin-bottom: $spacing--md;
+                width: 20rem;
+                padding: 1.7rem 3.2rem;
+                font-size: 1.8rem;
+                line-height: 1;
+                color: $main-blue;
+                border: none;
+                width: 100%;
+                outline: none;
+                border-radius: 16px;
+    
+                &::placeholder {
+                    color: $light-gray;
+                    line-height: 1;
+                }
+            }
+
+            #saveScoreButton {
+                font-size: clamp(2rem, 1.2vw, 2rem);
+                text-transform: none;
+                font-weight: 600;
+
+                &[disabled] {
+                    box-shadow: none;
+                }
+
+                &:not([disabled]) {
+                    background-color: $success-green;
+                    outline: none;
+                    border: none;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                & {
+                    flex-direction: column;
+                    align-items: center;
+                    max-width: 100%;
+                    gap: $spacing--s;
+                    margin-bottom: $spacing--lg;
+
+                    input {
+                        width: 80%;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .quiz-form-actions {
+        @include d-flex(row,nowrap,center,space-between);
+        gap: $spacing--s;
+
+        @media screen and (max-width: 768px) {
+            & {
+                flex-direction: column;
+                align-items: center;
+                gap: $spacing--md;
+
+                a {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

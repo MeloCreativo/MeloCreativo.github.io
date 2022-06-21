@@ -1,0 +1,35 @@
+#highscores {
+    font-size: 2.8rem;
+    margin-bottom: $spacing--s;
+
+    .img-container {
+        width: 100%;
+        text-align: center;
+        margin-bottom: $spacing--md;
+
+
+        img {
+            width: clamp(16rem,15vw,16vw);
+        }
+    }
+
+
+    #highScoresList {
+        list-style: none;
+        margin-bottom: $spacing--md;
+        font-size: clamp(4rem,6vw,6rem);
+        margin: 0px 0px 6rem 0px;
+        padding: 2rem 3rem;
+        border-radius: 1.6rem;
+        background-color: $main-yellow;
+        box-shadow: 0px 15px 30px darken($main-blue, 15%);
+
+        li {
+            color: $black;
+            
+            &:not(:last-of-type) {
+                margin-bottom: $spacing--s;
+            }
+        }
+    }
+}

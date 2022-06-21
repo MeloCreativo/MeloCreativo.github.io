@@ -1,0 +1,124 @@
+@import "./variables";
+
+body * {
+  color: $white;  
+}
+
+#main-quiz {
+    width: 80vw;
+    height: 100%;
+    @include d-flex(column,nowrap,unset,space-between);
+
+    #hud {
+        @include d-flex(row,wrap,flex-start,space-between);
+        margin-bottom: $spacing--md;
+
+        .hud-item {
+            .hud-prefix {
+                text-align: center;
+                font-size: 2rem;
+                margin: 0px 0px $spacing--xs 0px;    
+            }
+            .hud-main-text {
+                text-align: center;
+
+                &#score {
+                    font-size: 8rem;
+                    margin: 0px;
+                }
+            }
+
+            #progress-bar {
+                width: 20rem;
+                height: 2rem;
+                border: 0.2rem solid ;
+                border-radius: 50px;
+                margin-top: 1.5rem; 
+                overflow: hidden;
+                
+                @media screen and (max-width: 768px) {
+                    & {
+                        width: unset;
+                    }
+                }
+            }
+
+            #progressBarFull {
+                height: 100%;
+                background: $progress-green;
+                width: 0%;
+            } 
+        }
+
+        @media screen and (max-width: 768px) {
+            & {
+                flex-direction: column-reverse;
+                align-items: center;
+                width: 100%;
+                margin-bottom: $spacing--md;
+
+                .hud-item {
+                    width: 100%;
+
+                    &:last-of-type {
+                        margin-bottom: $spacing--xs;
+                    }
+                }
+            }
+        }
+    }
+    #question {
+        font-size: clamp(4rem, 5vw, 5rem);
+        letter-spacing: 0.1rem;
+        line-height: 110%
+    }
+    .choice-container {
+        @include d-flex(row,nowrap,center, flex-start);
+        border-radius: 16px;
+        background-color: $light-blue;
+        font-size: clamp(3rem,5vw,5rem);
+        transition: $all;
+        margin-bottom: $spacing--s;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0 0.4rem 1.4rem 0 darken($main-blue, 15%);
+            transform: scale(1.02);
+            transition: transform 100ms;
+        }
+
+        .choice-prefix {
+            color: $white;
+            margin: 0 $spacing--md 0 0;
+            padding-left: 3rem;
+        }
+
+        .choice-text {
+            width: 100%;
+            margin: 0px;
+            padding: 3rem 0px;
+        }
+
+        &.correct-answer {
+            background-color: $success-green;
+        }
+        
+        &.incorrect-answer {
+            background-color: #ff3f2a;
+        }
+
+        @media only screen and (max-width: 768px) {
+            & {
+                .choice-container {
+                    min-width: 40rem;
+                    display: flex;
+                    flex-wrap: wrap;
+                } 
+            }
+        }
+    }
+}
