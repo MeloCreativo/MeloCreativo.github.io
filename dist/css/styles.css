@@ -159,6 +159,14 @@ body * {
   outline: none;
   border-radius: 16px;
 }
+#end .end-quiz-form .quiz-form-content input::-moz-placeholder {
+  color: #aaa;
+  line-height: 1;
+}
+#end .end-quiz-form .quiz-form-content input:-ms-input-placeholder {
+  color: #aaa;
+  line-height: 1;
+}
 #end .end-quiz-form .quiz-form-content input::placeholder {
   color: #aaa;
   line-height: 1;
@@ -261,6 +269,8 @@ h1 {
 }
 
 .btn {
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
   min-width: max-content;
   cursor: pointer;
   font-size: clamp(1.8rem, 1.4vw, 3rem);
@@ -391,6 +401,4 @@ footer i {
   footer p {
     margin-top: 0px;
   }
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

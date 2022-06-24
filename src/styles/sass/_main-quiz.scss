@@ -5,8 +5,7 @@ body * {
 }
 
 #main-quiz {
-    width: 80vw;
-    height: 100%;
+    width: 100%;
     @include d-flex(column,nowrap,unset,space-between);
 
     #hud {
@@ -94,13 +93,13 @@ body * {
         .choice-prefix {
             color: $white;
             margin: 0 $spacing--md 0 0;
-            padding-left: 3rem;
+            padding-left: 2rem;
         }
 
         .choice-text {
             width: 100%;
             margin: 0px;
-            padding: 3rem 0px;
+            padding: 2rem 0px;
         }
 
         &.correct-answer {

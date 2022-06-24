@@ -10,22 +10,24 @@
 </head>
 <body>
     <div class="container highscore">
-        <div id="highscores">
-            <div class="img-container">
-                <img src="../src/assets/logo-quizscript.svg" alt="Puntuaciones más altas de QuizScript">
+        <div class="inner-container">
+            <div id="highscores">
+                <div class="img-container">
+                    <img src="../src/assets/logo-quizscript.svg" alt="Puntuaciones más altas de QuizScript">
+                </div>
+                <h1 id="finalScore">
+                Tabla de puntajes
+                </h1>
+                <ul id="highScoresList"></ul> 
+                <a href="/" class="btn light-blue__outlined">Inicio</a>
             </div>
-            <h1 id="finalScore">
-            Tabla de puntajes
-            </h1>
-            <ul id="highScoresList"></ul> 
-            <a href="/" class="btn light-blue__outlined">Inicio</a>
+            <footer>
+                <p>Codeado con mucha paciencia por Francisco Melo</p>
+                <a href="https://www.github.com/MeloCreativo" target="_blank" rel="noopener">
+                    <i class="fa fa-github"></i>
+                </a>
+            </footer>
         </div>
-        <footer>
-            <p>Codeado con mucha paciencia por Francisco Melo</p>
-            <a href="https://www.github.com/MeloCreativo" target="_blank" rel="noopener">
-                <i class="fa fa-github"></i>
-            </a>
-        </footer>
     </div>
 </body>
 <script src="../public/scripts/high-scores.js"></script>

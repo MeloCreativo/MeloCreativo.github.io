@@ -9,8 +9,14 @@
     font-family: $primary-font;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     background-color: $main-blue;
+    display: flex;
+    justify-content: center;
 }
 
 h1 {
@@ -74,15 +80,12 @@ h1 {
 }
 
 .container {
-    width: 100%;
+    min-width: 100%;
     height: 100%;
-    @include d-flex(column,nowrap,center,center);
-    margin: $spacing--lg 0;
-
-    &.home,
-    &.end-quiz {
-        margin: 0;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8vh 0;
 
     @media screen and (max-width: 768px) {
         & {
@@ -96,6 +99,14 @@ h1 {
     }
 }
 
+.inner-container {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 #home {
     @include d-flex(column, wrap, center, center);
 
