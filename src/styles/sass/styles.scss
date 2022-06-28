@@ -106,9 +106,7 @@ h1 {
     width: 100%;
     height: 100%;
     max-width: 1200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: inline-block;
 }
 #home {
     @include d-flex(column, wrap, center, center);
