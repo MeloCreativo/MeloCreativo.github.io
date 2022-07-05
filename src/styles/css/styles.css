@@ -237,6 +237,87 @@ body * {
   margin-bottom: 16px;
 }
 
+.categories .inner-container {
+  text-align: center;
+}
+.categories .inner-container img {
+  width: clamp(15rem, 18vw, 30rem);
+  margin-bottom: 32px;
+}
+.categories .inner-container #category-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+.categories .inner-container #category-grid .category-card {
+  text-align: center;
+  font-size: 2.5rem;
+  text-decoration: none;
+  padding: 1.6rem 3.2rem;
+  border-radius: 1.6rem;
+  box-shadow: 0px 10px 20px #2d16bc;
+  transition: all ease-in-out 0.3s;
+  background-color: #3b1fe5;
+}
+.categories .inner-container #category-grid .category-card.violet {
+  border: 3px solid #da8bff;
+  transition: all 0.3s ease-in-out;
+}
+.categories .inner-container #category-grid .category-card.violet:hover {
+  background-color: #da8bff;
+  transition: all 0.3s ease-in-out;
+}
+.categories .inner-container #category-grid .category-card.green {
+  border: 3px solid #8edf6e;
+  transition: all 0.3s ease-in-out;
+}
+.categories .inner-container #category-grid .category-card.green:hover {
+  background-color: #8edf6e;
+}
+.categories .inner-container #category-grid .category-card.yellow {
+  border: 3px solid #ffc925;
+  transition: all 0.3s ease-in-out;
+}
+.categories .inner-container #category-grid .category-card.yellow:hover {
+  background-color: #ffc925;
+}
+.categories .inner-container #category-grid .category-card.light-blue {
+  border: 3px solid #2DC7FF;
+  transition: all 0.3s ease-in-out;
+}
+.categories .inner-container #category-grid .category-card.light-blue:hover {
+  background-color: #2DC7FF;
+}
+.categories .inner-container #category-grid .category-card.dark-violet {
+  border: 3px solid #472D30;
+  transition: all 0.3s ease-in-out;
+}
+.categories .inner-container #category-grid .category-card.dark-violet:hover {
+  background-color: #472D30;
+}
+.categories .inner-container #category-grid .category-card.orange {
+  border: 3px solid #ffa217;
+  transition: all 0.3s ease-in-out;
+}
+.categories .inner-container #category-grid .category-card.orange:hover {
+  background-color: #ffa217;
+}
+.categories .inner-container #category-grid .category-card:hover {
+  box-shadow: none;
+  transform: translateY(-5px);
+}
+@media screen and (max-width: 768px) {
+  .categories .inner-container #category-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+  }
+}
+
 * {
   font-size: 62.5%;
   font-family: "Kanit", Helvetica, Arial, sans-serif;
@@ -255,7 +336,7 @@ h1 {
   font-size: clamp(3rem, 4vw, 5rem);
   color: #fff;
   font-weight: 400;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.2rem;
 }
 
 .btn {

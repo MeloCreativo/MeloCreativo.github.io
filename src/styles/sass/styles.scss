@@ -3,6 +3,7 @@
 @import "./main-quiz";
 @import "./ending-quiz";
 @import "./high-scores";
+@import "./categories";
 
 * {
     font-size: 62.5%;
@@ -22,7 +23,7 @@ h1 {
     font-size: clamp(3rem, 4vw, 5rem);
     color: $white;
     font-weight: 400;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.2rem;
 }
 
 .btn {
