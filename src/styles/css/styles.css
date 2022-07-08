@@ -93,7 +93,9 @@ body * {
 #main-quiz .choice-container .choice-prefix {
   color: #fff;
   margin: 0 32px 0 0;
-  padding-left: 2rem;
+  padding: 2.5rem 3rem;
+  background: #1d0e77;
+  border-radius: 1.6rem;
 }
 #main-quiz .choice-container .choice-text {
   width: 100%;

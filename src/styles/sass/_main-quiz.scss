@@ -92,8 +92,10 @@ body * {
 
         .choice-prefix {
             color: $white;
-            margin: 0 $spacing--md 0 0;
-            padding-left: 2rem;
+            margin: 0 32px 0 0;
+            padding: 2.5rem 3rem;
+            background: darken($main-blue, 30%);
+            border-radius: 1.6rem;
         }
 
         .choice-text {
