@@ -248,8 +248,8 @@ body * {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 15px;
-  grid-row-gap: 15px;
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
 }
 .categories .inner-container #category-grid .category-card {
   text-align: center;
@@ -418,12 +418,25 @@ h1 {
   align-items: center;
   justify-content: center;
 }
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
 #home .home-title {
   margin-bottom: 64px;
   text-align: right;
 }
 #home .home-title .welcome-img {
   width: min(80vw, 600px);
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
 }
 @media screen and (max-width: 768px) {
   #home .home-title {

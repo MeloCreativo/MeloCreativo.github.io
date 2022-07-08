@@ -107,6 +107,18 @@ h1 {
 }
 #home {
     @include d-flex(column, wrap, center, center);
+    
+    @keyframes float {
+        0% {
+            transform: translatey(0px);
+        }
+        50% {
+            transform: translatey(-20px);
+        }
+        100% {
+            transform: translatey(0px);
+        }
+    }
 
     .home-title {
         margin-bottom: $spacing--lg;
@@ -114,6 +126,8 @@ h1 {
 
         .welcome-img {
             width: min(80vw, 600px);
+            transform: translatey(0px);
+            animation: float 6s ease-in-out infinite;
         }
 
         @media screen and (max-width: 768px) {

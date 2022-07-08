@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="../src/styles/css/normalize.css">
     <link rel="stylesheet" href="../src/styles/css/styles.css">
     <script src="https://kit.fontawesome.com/43aad429ed.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>QuizScript - Selecciona una categoría</title>
 </head>
 <body>
     <div class="container categories">
         <div class="inner-container">
-            <img src="../src/assets/logo-quizscript.svg" alt="QuizScript">
+            <a href="/index.html">
+                <img src="../src/assets/logo-quizscript.svg" id="logo" alt="QuizScript">                
+            </a>
             <h1>Selecciona una categoría y comienza a jugar</h1>
             <div id="category-grid">
                 <a class="category-card violet" href="../pages/quiz.html?category=html">
@@ -42,5 +45,19 @@
             </footer>
         </div>
     </div>
+    <script>
+        $(document).ready(function() {
+            $('#logo').hover(function () {
+                $('#logo').animate({
+                    width: '+=20px'
+                }, 200);
+                },
+                function() {
+                $('#logo').animate({
+                    width: '-=20px'
+                }, 200);
+            });
+        });
+    </script>
 </body>
 </html>

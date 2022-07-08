@@ -9,7 +9,7 @@
             margin-bottom: $spacing--md;
         }
         #category-grid {
-            @include grid(repeat(2, 1fr),repeat(3, 1fr),15px,15px);
+            @include grid(repeat(2, 1fr),repeat(3, 1fr),3rem,3rem);
         
             .category-card {
                 text-align: center;

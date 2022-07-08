@@ -33,7 +33,7 @@ const questions = {
         },
         {
             question:  "¿Cuál es la etiqueta correcta para crear un hyperlink?",
-            choice1: "<a href=\"http://www.quizscript.com\">>",
+            choice1: "<a href=\"http://www.quizscript.com\">",
             choice2: "<a>",
             choice3: "<a target=\"http://www.quizscript.com\">",
             choice4: "<a href=\"...\">",
