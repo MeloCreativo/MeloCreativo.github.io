@@ -13,16 +13,22 @@ let questionCounter = 0
 let availableQuestions = []
 
 // Preguntas para "QuizScript"
-const questions = (json) => {
+const jsonUrl = '../src/utils/answers.json';
 
-    fetch(json)
-    .then(res => res.json())
-    .then(data => data)
+function getData(url) {
+return fetch(url)
+    .then((res) => res.json())
+    .then((data) => data);
 }
 
-const answers = questions("src/utils/answers.json")
+function getAnswers() {
+getData(jsonUrl).then((data) => {
+questions = data;
+});
+}
 
-console.log(answers)
+let questions;
+getAnswers();
 
 const SCORE_POINTS = 100 // Seteo del valor para cada pregunta correcta
 const MAX_QUESTIONS = 4 // Setelo del valor máximo de preguntas a mostrar
