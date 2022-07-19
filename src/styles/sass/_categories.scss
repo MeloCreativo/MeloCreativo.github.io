@@ -10,6 +10,7 @@
         }
         #category-grid {
             @include grid(repeat(2, 1fr),repeat(3, 1fr),3rem,3rem);
+            margin-bottom: 6rem;
         
             .category-card {
                 text-align: center;
@@ -86,6 +87,18 @@
                 &{
                     @include grid(1fr,1fr,2rem,2rem);
                 }
+            }
+        }
+
+        .add-question {
+            display: flex;
+            justify-content: center;
+
+            a {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                line-height: 1;
             }
         }
     }

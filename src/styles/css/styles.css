@@ -252,6 +252,7 @@ body * {
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 3rem;
   grid-row-gap: 3rem;
+  margin-bottom: 6rem;
 }
 .categories .inner-container #category-grid .category-card {
   text-align: center;
@@ -319,6 +320,16 @@ body * {
     grid-row-gap: 2rem;
   }
 }
+.categories .inner-container .add-question {
+  display: flex;
+  justify-content: center;
+}
+.categories .inner-container .add-question a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  line-height: 1;
+}
 
 * {
   font-size: 62.5%;
@@ -382,8 +393,17 @@ h1 {
   border: 3px solid #ffc925;
   transition: all 0.3s ease-in-out;
 }
+.btn.yellow__filled > span {
+  color: #ffc925;
+  font-size: 4rem;
+  line-height: 1;
+  transition: all 0.3s ease-in-out;
+}
 .btn.yellow__filled:hover {
   background-color: #ffc925;
+  color: #000;
+}
+.btn.yellow__filled:hover > span {
   color: #000;
 }
 

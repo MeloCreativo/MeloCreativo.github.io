@@ -71,9 +71,20 @@ h1 {
         border: 3px solid $main-yellow;
         transition: $all;
 
+        > span {
+            color: $main-yellow;
+            font-size: 4rem;
+            line-height: 1;
+            transition: $all;
+        }
+
         &:hover {
             background-color: $main-yellow;
             color: $black;
+
+            > span {
+                color: $black;
+            }
         }
     }
 }
