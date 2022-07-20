@@ -1,0 +1,49 @@
+#add-question {
+    @include d-flex(column, nowrap, flex-start, flex-start);
+    font-size: clamp(0.4rem,1.6rem,2.5rem);
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 4rem;
+    border-radius: 1.6rem;
+    background-color: darken($main-blue, 30%);
+
+    label {
+        font-size: 2rem;
+        margin-bottom: $spacing--s;
+    }
+
+    input:not(input[type=submit]), select {
+        display: inline-block;
+        width: -webkit-fill-available;
+        height: 45px;
+        box-sizing: content-box;
+        margin-bottom: $spacing--md;
+        padding: 1.7rem 3.2rem;
+        font-size: 1.8rem;
+        line-height: 1;
+        color: $main-blue;
+        background-color: $white;
+        border: none;
+        outline: none;
+        border-radius: 1.6rem;
+        
+        &::placeholder {
+            color: lighten($black, 70%);
+        }
+    }
+
+    input[type=submit] {
+        display: flex;
+        align-self: center;
+        margin: $spacing--s 0;
+    }
+
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url("data:image/svg+xml;utf8,<svg fill='blue' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+        background-repeat: no-repeat;
+        background-position-x: 96%;
+        background-position-y: 50%;
+    }
+}

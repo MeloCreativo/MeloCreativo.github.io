@@ -18,8 +18,27 @@
             </a>
             <h1>Agrega una pregunta a la categoría que desees</h1>
             <div>
-                <form action="">
-                    <input type="select">
+                <form id="add-question">
+                    <label for="categories">Selecciona la categoría:</label>
+                    <select name="categories" id="select-categories" form="carform">
+                      <option value="html">HTML</option>
+                      <option value="css">CSS</option>
+                      <option value="javascript">Javascript</option>
+                      <option value="python">Python</option>
+                      <option value="react">React</option>
+                      <option value="c++">C++</option>
+                    </select>
+                    <label for="question">Ingresa la pregunta:</label>
+                    <input type="text" name="question" id="new-question" placeholder="Ej: ¿Quién fue el creador de Quiz Script?" required>
+                    <label for="correct-answer">Ingresa respuesta correcta:</label>
+                    <input type="text" name="correct-answer" id="correct-answer" placeholder="Ej: Francisco Melo" required>
+                    <label for="incorrect-answer1">Ingresa la primer respuesta incorrecta:</label>
+                    <input type="text" name="incorrect-answer1" id="incorrect-answer1" placeholder="Ej: Máximo Aurelio" required>
+                    <label for="incorrect-answer2">Ingresa la segunda respuesta incorrecta:</label>
+                    <input type="text" name="incorrect-answer2" id="incorrect-answer2" placeholder="Ej: Juan Pablo II" required>
+                    <label for="incorrect-answer3">Ingresa la tercer respuesta incorrecta:</label>
+                    <input type="text" name="incorrect-answer3" id="incorrect-answer3" placeholder="Ej: Yo mismo" required>
+                    <input class="btn light-blue__outlined" type="submit" value="Agregar pregunta">
                 </form>
             </div>
             <footer>
