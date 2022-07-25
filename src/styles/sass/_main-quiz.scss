@@ -67,7 +67,7 @@ body * {
         }
     }
     #question {
-        font-size: clamp(4rem, 5vw, 5rem);
+        font-size: clamp(2.8rem, 5vw, 5rem);
         letter-spacing: 0.1rem;
         line-height: 110%
     }
@@ -114,11 +114,19 @@ body * {
 
         @media only screen and (max-width: 768px) {
             & {
-                .choice-container {
-                    min-width: 40rem;
+                display: flex;
+                align-items: unset;
+
+                .choice-prefix {
                     display: flex;
-                    flex-wrap: wrap;
-                } 
+                    align-items: center;
+                    height: unset;
+                }
+
+                .choice-text {
+                    word-break: break-all;
+                    padding: 2rem 2rem 2rem 0;
+                }
             }
         }
     }

@@ -45,5 +45,21 @@
         background-repeat: no-repeat;
         background-position-x: 96%;
         background-position-y: 50%;
+
+        option {
+            color: $main-blue;
+            font-size: 1.4rem;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        & {
+            max-width: 100%;
+            padding: 2.5rem;
+
+            label {
+                text-align: left;
+            }
+        }
     }
 }
