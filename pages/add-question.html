@@ -20,7 +20,7 @@
             <div>
                 <form id="add-question">
                     <label for="categories">Selecciona la categoría:</label>
-                    <select name="categories" id="select-categories" form="carform">
+                    <select name="categories" id="select-categories">
                       <option value="html">HTML</option>
                       <option value="css">CSS</option>
                       <option value="javascript">Javascript</option>
@@ -31,14 +31,21 @@
                     <label for="question">Ingresa la pregunta:</label>
                     <input type="text" name="question" id="new-question" placeholder="Ej: ¿Quién fue el creador de Quiz Script?" required>
                     <label for="correct-answer">Ingresa respuesta correcta:</label>
-                    <input type="text" name="correct-answer" id="correct-answer" placeholder="Ej: Francisco Melo" required>
+                    <input type="text" name="choice1" id="correct-answer" placeholder="Ej: Francisco Melo" required>
                     <label for="incorrect-answer1">Ingresa la primer respuesta incorrecta:</label>
-                    <input type="text" name="incorrect-answer1" id="incorrect-answer1" placeholder="Ej: Máximo Aurelio" required>
+                    <input type="text" name="choice2" id="incorrect-answer1" placeholder="Ej: Máximo Aurelio" required>
                     <label for="incorrect-answer2">Ingresa la segunda respuesta incorrecta:</label>
-                    <input type="text" name="incorrect-answer2" id="incorrect-answer2" placeholder="Ej: Juan Pablo II" required>
+                    <input type="text" name="choice3" id="incorrect-answer2" placeholder="Ej: Juan Pablo II" required>
                     <label for="incorrect-answer3">Ingresa la tercer respuesta incorrecta:</label>
-                    <input type="text" name="incorrect-answer3" id="incorrect-answer3" placeholder="Ej: Yo mismo" required>
-                    <input class="btn light-blue__outlined" type="submit" value="Agregar pregunta">
+                    <input type="text" name="choice4" id="incorrect-answer3" placeholder="Ej: Yo mismo" required>
+                    <label for="answer">Selecciona la respuesta correcta:</label>
+                    <select name="answer" id="select-categories">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <input class="btn light-blue__outlined" type="submit" id="save" value="Agregar pregunta" disabled>
                 </form>
             </div>
             <footer>
@@ -63,5 +70,6 @@
             });
         });
     </script>
+    <script src="../public/scripts/add-questions.js"></script>
 </body>
 </html>

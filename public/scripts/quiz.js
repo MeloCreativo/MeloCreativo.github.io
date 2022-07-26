@@ -27,7 +27,17 @@ function getAnswers() {
 }
 
 const SCORE_POINTS = 100; // Seteo del valor para cada pregunta correcta
-const MAX_QUESTIONS = 4; // Setelo del valor máximo de preguntas a mostrar
+let MAX_QUESTIONS; // Setelo del valor máximo de preguntas a mostrar
+
+// Chequear LocalStorage
+function checkLocalStorage(cat, dataParam) {
+    if (localStorage.getItem(cat) != null) {
+        const saveQuestion = JSON.parse(localStorage.getItem(cat))
+        return [...dataParam[cat],...saveQuestion];  
+    } else {
+        return [...dataParam[cat]]
+    }
+}
 
 // INIICO DEL JUEGO
 startGame = async () => {
@@ -39,7 +49,8 @@ startGame = async () => {
     const urlParams = new URLSearchParams(queryString);
     const category = urlParams.get('category');
     console.log(questions);
-    availableQuestions = [...questions[category]];
+    availableQuestions = checkLocalStorage(category,questions);
+    MAX_QUESTIONS = availableQuestions.length;
     getNewQuestion();
     console.log(availableQuestions);
 };
