@@ -26,6 +26,7 @@
         border: none;
         outline: none;
         border-radius: 1.6rem;
+        cursor: pointer;
         
         &::placeholder {
             color: lighten($black, 70%);
@@ -36,6 +37,14 @@
         display: flex;
         align-self: center;
         margin: $spacing--s 0;
+
+        &:disabled {
+            background-color: gray !important;
+            box-shadow: none;
+            border: 1px solid darken($main-blue, 10%);
+            color: darken(gray, 30%);
+            text-shadow: none;
+        }
     }
 
     select {

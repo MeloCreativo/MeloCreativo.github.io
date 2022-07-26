@@ -370,6 +370,7 @@ body * {
   border: none;
   outline: none;
   border-radius: 1.6rem;
+  cursor: pointer;
 }
 #add-question input:not(input[type=submit])::placeholder, #add-question select::placeholder {
   color: #b3b3b3;
@@ -378,6 +379,13 @@ body * {
   display: flex;
   align-self: center;
   margin: 16px 0;
+}
+#add-question input[type=submit]:disabled {
+  background-color: gray !important;
+  box-shadow: none;
+  border: 1px solid #3218d3;
+  color: #343434;
+  text-shadow: none;
 }
 #add-question select {
   -webkit-appearance: none;
