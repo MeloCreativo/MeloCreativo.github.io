@@ -1,12 +1,11 @@
+// Obtenci{on de data desde el form
 const getFormData = (e) => {
     e.preventDefault();
     let form = document.querySelector('#add-question')
-    let coso = new FormData(form);
-    console.log(coso);
-    console.log(...coso);
+    let retrieveData = new FormData(form);
     var obj = {};
-	for (var key of coso.keys()) {
-		obj[key] = coso.get(key);
+	for (var key of retrieveData.keys()) {
+		obj[key] = retrieveData.get(key);
 	}
 	console.log(obj);
     const category = obj.categories;
@@ -17,9 +16,12 @@ const getFormData = (e) => {
     } else {
         localStorage.setItem(category, JSON.stringify([obj]));
     }
+    clearInputs();
 }
 document.querySelector("[type='submit']").addEventListener('click', getFormData)
 
+// Se realiza un check de todos los inputs completos para
+// habilitar el submit button
 function inputCheck() {
     const submitBtn = document.getElementById('save')
     
@@ -52,18 +54,6 @@ function inputCheck() {
 
 inputCheck();
 
-function myFunc() {
-    document.getElementById('add-question').reset();
-    document.getElementById("hidden_div").style.display = "block";
-    document.getElementById("add-question").onsubmit = function(){
-        location.reload(true);
-    }
-}
-
-function showDiv() {
-    document.getElementById("hidden_div").style.display = "block";
-}
-
 var serializeForm = function (form) {
 	var obj = {};
 	var formData = new FormData(form);
@@ -72,3 +62,24 @@ var serializeForm = function (form) {
 	}
 	return obj;
 };
+
+// Se muestra y oculta el div en forma de alert
+function showHideAlert() {
+    var x = document.getElementById("hidden_div");
+    if (x.style.display === "none") {
+      x.style.display = "flex";
+    } else {
+      x.style.display = "none";
+    }
+}
+
+function toggleClasses() {
+    showHideAlert();
+    setTimeout(showHideAlert, 6000);
+}
+
+// Se limpian los campos del formulario una vez completado
+function clearInputs() {
+    document.getElementById('add-question').reset();
+    toggleClasses();
+}
