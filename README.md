@@ -24,7 +24,7 @@ Se recomienda periodicamente la limpieza del mismo ejecutando <b>localStorage.cl
 Los pull request son bienvenidos. Por favor en caso de querer contribuir con el proyecto abrí un issue y discutamos sobre los detalles.
 
 ## Sobre Mi
-Soy un Desarrollador Web y Diseñador Gráfico profesional, radicado en Argentina. Trabajo en el campo del Diseño y el Desarrollo web desde hace 4 años. He trabajado en grandes proyectos internacionales y hoy en día me encuentro desarrollando tareas como UX Developer y UX/UI designer para Tiendanube. ☁️👨‍💻
+¡Hola! Mi nombre es Francisco Melo. Soy un Desarrollador Web y Diseñador Gráfico profesional, radicado en Argentina. Trabajo en el campo del Diseño y el Desarrollo web desde hace 4 años. He trabajado, además, en grandes proyectos internacionales y hoy en día me encuentro desarrollando tareas como UX Developer y UX/UI designer para Tiendanube. ☁️👨‍💻
 
 ## Contacto
 <a href="mailto:melodgw@gmail.com">Enviame un mail</a> y charlemos.
