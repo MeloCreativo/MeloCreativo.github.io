@@ -1,4 +1,4 @@
-// Obtenci{on de data desde el form
+// Obtencion de data desde el form
 const getFormData = (e) => {
     e.preventDefault();
     let form = document.querySelector('#add-question')
