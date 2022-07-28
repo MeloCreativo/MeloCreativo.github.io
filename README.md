@@ -30,4 +30,4 @@ Los pull request son bienvenidos. Por favor en caso de querer contribuir con el 
 <a href="mailto:melodgw@gmail.com">Enviame un mail</a> y charlemos.
 
 ## License
-[Francisco Melo](https://github.com/MeloCreativo)
+<b>Todo el proyecto fue desarrollado sin uso de Bootstrap o librerías afines. Tanto el diseño UX como la implementación de los estilos son únicos y propiedad de [Francisco Melo](https://github.com/MeloCreativo)</b>
