@@ -1,8 +1,9 @@
 # Quiz Script
 
-<b>Quiz Script es un juego interactivo de preguntas y respuestas (Q&A)</b>, creado con el fin de generar una competencia sana y autogestionada entre los amantes del código.
-Su funcionamiento se basa en sesiones donde el usuario podrá elegir una categoría en la cual competir, eligiendo una categoría, entre 6 disponibles al momento donde recibirá preguntas a cerca de un lenguaje de programación elegido.
+<b>Quiz Script es un juego interactivo de preguntas y respuestas (Q&A)</b>, creado con el fin de generar una competencia sana y autogestionada entre los amantes del código.<br>
+Su funcionamiento se basa en sesiones donde el usuario podrá elegir una categoría en la cual competi, entre 6 disponibles. Luego recibirá preguntas a cerca de un lenguaje de programación elegido.<br>
 Al finalizar, quien se encuentre jugando <b>podrá registrar su puntaje como así también agregar nuevas preguntas en la categoría que desee</b>.
+Las preguntas se setean de manera aleatoria.
 
 ## Consideraciones
 Actualmente la beta cerrada de Quiz Script sólo aloja el almacenamiento tanto de las preguntas agregadas, como de las puntuaciones altas, en el localStorage de cada usuario en cuestión.
